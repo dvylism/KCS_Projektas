@@ -1,0 +1,264 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background-image: url(../images/background.jpg);
+ }
+.header {
+    padding: 2px;
+    color: black;
+    background: white;
+
+}
+.heading1-line {
+    color: white;
+    font-family: 'Rouge Script', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 124px;
+    margin: 20px 0 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.heading2-line {
+    text-align: center;
+    background: #fcd24a;
+}
+.logo {
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 150px;
+}
+
+.navigation ul li a {
+   color: white;
+   font-weight: 300;
+   letter-spacing: 2px;
+   text-decoration: none;
+   background: black;
+   padding: 20px 5px;
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+}
+
+ul li a:hover {
+   background: red;
+}
+
+.main {
+   max-width: 1000px;
+   margin: 20px auto;
+   padding: 0 3em 1.5em;
+
+
+}
+.navigation a {
+    border-radius: 20px;
+}
+.navigation ul {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+    flex: 3;
+}
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+}
+.partners p {
+    margin: 5px;
+    text-align: center;
+}
+#footer {
+    background: black;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.intro {
+    font-size: 24px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+
+}
+h2 span {
+    border: 4px dashed white;
+    padding: 10px;
+    background: #fcd24a;
+}
+.bigger-font {
+    font-size: 32px;
+    text-align: center;
+}
+
+.yt-video {
+    margin-left: 10px;
+    border: 0;
+}
+.video-place {
+    text-align: center;
+}
+.information-section h1 {
+    font-size: 15pt;
+    color: black;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+.information-section h1 span {
+    border: 4px dashed black;
+    padding: 10px;
+}
+.information-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.information-section form {
+    text-align: center;
+    margin-top: 0;
+}
+.product-image {
+    margin: 5px;
+}
+.flex-container {
+    text-align: center;
+}
+.flex-container .stress-ball, .tea {
+    background: white;
+    width: 250px;
+    margin: 8px;
+    display: inline-block;
+}
+.product-name {
+    color: rgb(123, 147, 169);
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.additional-info {
+    margin-left: 20px;
+}
+.price {
+    font-size: 24px;
+    margin: 0 20px;
+}
+.order-button {
+    background: rgb(156, 222, 65);
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    height: 48px;
+    margin: 10px;
+    font-size: 28px;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #a64cad;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+    .logo {
+        width: 130px;
+        margin: 0px auto 0 auto;
+    }
+   .navigation ul {
+      flex-wrap: wrap;
+   }
+
+   .navigation li {
+      flex: 1 1 50%;
+      margin-top: 10px;
+   }
+
+   .navigation .user {
+      flex: 1 1 33.33%;
+   }
+}
+
+@media all and (max-width: 480px) {
+    .heading1-line {
+        font-size: 2.25em;
+        line-height: 72px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .navigation li {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navigation .user {
+       flex-basis: 50%;
+    }
+    .intro {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .yt-video {
+        width: 150px;
+        height: 100px;
+        border: 0;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .bigger-text {
+        font-size: 20px;
+    }
+    .partners img {
+        width: 200px;
+        height: 120px;
+        margin-top: 5px;
+        display: block;
+    }
+    .product-image {
+    margin: 5px;
+    }
+    .additional-info {
+    margin-left: 5px;
+    }
+    .flex-container .stress-ball, .tea {
+    background: white;
+    width: 220px;
+    margin: 5px -20px 5px;
+    }
+}
