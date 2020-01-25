@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PBS</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">PBS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">Apie PBS</a></li>
+        <li><a href="#info">Informacija</a></li>
+        <li><a href="http://martynasdvylis.lt/PBS/chatroom/chatroom.php">Pokalbių kambarys</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/paauglystebestreso/" class="fa fa-facebook" target="_blank";></a></li>
+        <li><a href="https://www.instagram.com/paauglystebestreso/" class="fa fa-instagram" target="_blank";></a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">Paauglystė be streso</span>
+    <p><img class="logo" src="images/logo.svg" alt="PBS"></p>
+  </div>
+</div>
+<div class="bgimg-3"></div>
+<div id="about">
+    <h3>Kas yra PBS?</h3>
+    <p class="intro">Paauglystė be streso (PBS) – tai AcceleratorX bendrovė, kuri siekia, kad paaugliai gyventų ramesnį gyvenimą, kadangi kiekvienais metais moksleiviai/studentai, mokymo įstaigose patiria stresą. Mes sugalvojome kaip galime tai palengvinti ir padėti vieni kitiems. Mūsų sukurtame tinklapyje galima bendrauti tarpusavyje, užduoti klausimą ir gauti atsakymą. Čia galite rasti įvairios informacijos kaip išmokti valdyti stresą. Konsultacijos su specialistais - psichologais (Vainilavičienė Audronė), socialiniais pedagogais (Aksinija Andijankina), buvusiais mokiniais (Emilija Zelenkauskaitė, VU studentė. Patarimai padės atsigauti nuo emociškai slegiančių problemų. Nelikime vieni kitiems abejingi!</p>
+    <p class="bigger-font">Konsultantai</p>
+    <div class="partners">
+        <p>
+            <img src="images/daiva.png" alt="Daiva">
+            <img src="images/audrone.png" alt="Audronė">
+            <img src="images/aksinija.png" alt="Aksinija">
+            <img src="images/emilija.png" alt="Emilija">
+        </p>
+    </div>
+</div>
+
+<div class="bgimg-2"></div>
+
+<div id="info" class="bgimg-1">
+   <p class="bigger-font">Informacija apie stresą</p>
+        <p class="centered">
+            <iframe class="yt-video" width="350" height="250" src="https://www.youtube.com/embed/3DZiTrzyJKo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="yt-video" width="350" height="250" src="https://www.youtube.com/embed/BFWlnBZR47I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <div class="information-section">
+            <h1><span>Klausimai</span></h1>
+		      <form action="" method="post" name="form">
+                <label for="name">Vardas</label><br>
+                <input type="text" name="name" placeholder="Vardas" required><br>
+                <label for="email">El. Paštas</label><br>
+                <input type="email" name="email" placeholder="El. paštas" required><br>
+                <label for="message">Žinutė</label><br>
+                <textarea name="msg" placeholder="Rašykite čia žinutę.." required></textarea><br>
+                <input type="submit" name="submit" onclick="IsEmpty();" value="Siųsti">
+		      </form>
+	   </div>
+</div>    
+    
+<div class="footer-wrapper">
+  <div  id="footer">
+        <a href="https://www.facebook.com/paauglystebestreso/" class="fa fa-facebook" target="_blank";></a>
+        <a href="https://www.instagram.com/paauglystebestreso/" class="fa fa-instagram" target="_blank";></a>
+  </div>
+</div>
+
+
