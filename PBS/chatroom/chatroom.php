@@ -45,7 +45,7 @@ $name = $name ?? $_SESSION['name'] ?? $_POST['name'] ?? null;
 	</div>
 	<div class="row">
      	<div style="margin-left: 20%; right: 30px;" class="col-md-8">
-			<form method="POST" action="chatroom/index.php">
+			<form method="POST" action="chatroom.php">
 				<input type="text" name="name" value="<?PHP print $name ?>" placeholder="Įveskite savo vardą" required="">
 				<textarea name="message" placeholder="Rašykite žinutę..." required=""></textarea>
                 <input type="submit" style="color: white;" name="submit" id="button1" value="Siųsti"/>

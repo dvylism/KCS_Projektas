@@ -123,23 +123,32 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media all and (max-width: 992px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
+    }
+    .intro {
+        margin: 10px;
     }
     .partners img {
         width: 200px;
         height: 120px;
         margin-top: 5px;
         display: block;
-        margin-right: 30px;
+        margin-left: 40px;
     }
+    
     .centered iframe {
         width: 200px;
         height: 120px;
         display: block;
+        margin-left: 50px;
     }
     #about, #info {
         padding: 0;
+    }
+    .caption span.border {
+        letter-spacing: 2px;
+        font-size: 18px;
     }
 }
