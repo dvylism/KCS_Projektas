@@ -1,23 +1,30 @@
 body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-  scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    scroll-behavior: smooth;
+    background-color: #ffffcc;
 }
 
 #about {
     color: #777;
-    background-color:white;
     text-align:center;
-    padding:50px 80px;
+    padding: 50px 80px;
     text-align: justify;
 }
 
+p {
+    font-size: 16px;
+}
+.email {
+    color: white;
+    margin-right: 5px;
+}
 #info {
     color: black; 
-    text-align:center;
-    padding:50px 80px;
+    text-align: center;
+    padding: 20px 80px;
 }
 
 .footer-wrapper {
@@ -33,62 +40,56 @@ h3 {
     text-align: center;
 }
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .bgimg-1 {
-  background-image: url("../images/background.jpg");
-  min-height: 100%;
+    background-image: url("../images/background.jpg");
+    min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("../images/teenagers.png");
-  min-height: 400px;
+    background-image: url("../images/teenagers.png");
+    min-height: 400px;
 }
 .bgimg-3 {
-  background-image: url("../images/nature.jpg");
-  min-height: 400px;
+    background-image: url("../images/nature.jpg");
+    min-height: 400px;
 }
-
-
 .caption {
-  position: absolute;
-  left: 0;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
-
 .caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
-
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    margin-top: 5px;
 }
-
 .partners {
     display: flex;
     flex-wrap: wrap;
 }
-.partners p {
+.partners img {
     margin: 5px;
-    text-align: center;
 }
-
 .logo {
     width: 200px;
     margin-top: 50px;
@@ -96,32 +97,31 @@ h3 {
 .bigger-font {
     text-align: center;
     font-size: 36px;
+    margin-bottom: 20px;
 }
 .centered {
     text-align: center;
 }
-
 .fa {
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 4px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 4px;
 }
-
 .fa:hover {
     opacity: 0.7;
 }
-
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
+    padding: 10.5px;
 }
 .fa-instagram {
-  background: #a64cad;
-  color: white;
+    background: #a64cad;
+    color: white;
+    padding: 10px;
 }
-
 /* Turn off parallax scrolling for tablets and phones */
 @media all and (max-width: 992px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -135,14 +135,13 @@ h3 {
         height: 120px;
         margin-top: 5px;
         display: block;
-        margin-left: 40px;
+        margin-left: 80px;
     }
-    
     .centered iframe {
         width: 200px;
         height: 120px;
         display: block;
-        margin-left: 50px;
+        margin-left: 80px;
     }
     #about, #info {
         padding: 0;

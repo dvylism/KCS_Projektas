@@ -10,6 +10,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script language="javascript">
+        function IsEmpty() {
+
+          if (document.form.name.value == "" || document.form.email.value == "" || document.form.msg.value == "") {
+            alert("Žinutė nebuvo išsiųsta, nes palikote tuščių laukelių");
+          } else alert("Žinutė išsiųsta, laukite atsakymo!");
+
+          return;
+        }
+        if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+        }
+    </script>    
 </head>
 <body>
  <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0;">
@@ -26,16 +39,23 @@
       <ul class="nav navbar-nav">
         <li><a href="#about">Apie PBS</a></li>
         <li><a href="#info">Informacija</a></li>
-        <li><a href="http://martynasdvylis.lt/PBS/chatroom/chatroom.php">Pokalbių kambarys</a></li>
+        <li><a href="chatroom/chat.html">Pokalbių kambarys</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.facebook.com/paauglystebestreso/" class="fa fa-facebook" target="_blank";></a></li>
-        <li><a href="https://www.instagram.com/paauglystebestreso/" class="fa fa-instagram" target="_blank";></a></li>
+          <li style="margin-top: 5px;" class="email">
+              <a href="mailto:paauglystebestreso@gmail.com">paauglystebestreso@gmail.com</a>
+          </li>
+          <li>
+              <a href="https://www.facebook.com/paauglystebestreso/" class="fa fa-facebook fa-lg" target="_blank";></a>
+          </li>
+          <li>
+              <a href="https://www.instagram.com/paauglystebestreso/" class="fa fa-instagram fa-xs" target="_blank";></a>
+          </li>
       </ul>
     </div>
   </div>
 </nav> 
-<div class="bgimg-1">
+<div id="home" class="bgimg-1">
   <div class="caption">
     <span class="border">Paauglystė be streso</span>
     <p><img class="logo" src="images/logo.svg" alt="PBS"></p>
@@ -43,14 +63,24 @@
 </div>
 <div class="bgimg-3"></div>
 <div id="about">
+    <div class="intro">
+        <p>Šiame tinklapyje rasite įvairių specialistų bei bendraamžių studentų elektroninio pašto adresus. Jie pasiruošę jums padėti. Jei turite klausimų, blogai jaučiatės mokykloje ar namuose, - rašykite jiems bet kuriuo metu. Per 24 valandas tikrai sulauksite atsakymų, patarimų, pagalbos. Jūsų asmens duomenys nebus viešinami, - garantuojame visiškai konfidencialų susirašinėjimą.
+        <p>Pokalbių kambaryje visuomet galite išdėstyti jums kylančias problemas, pasidalinti savo baimėmis, nerimu, sunkumais. Kartais geriausiais patarėjais tampa bendraamžiai, išgyvenantys tas pačias paauglystės problemas ir jau pabandę jas spręsti. Padėkime vieni kitiems. Patarkime. Paguoskime. Kartais geras  žodis tampa labai svarbus. Jaučiatės vieniši? Nesuprasti? Galbūt surasite ir naujų draugų, bendraminčių.
+        </p>
+        <p>Galite paskaityti straipsnius, pažiūrėti video, patariančius, kaip įveikti stresą arba bent sumažinti jo įtaką. Pabandykite pasiklausyti relaksacinės muzikos. Įsigykite mūsų gaminamų „gniaužtukų“, raminančios arbatos bei kitų stresą mažinančių priemonių.
+        </p>
+        <p>Teikite savo pasiūlymus ir pageidavimus, - ką galėtume keisti, kuo papildyti tinklapį, kad jūs jaustumėtės geriau. Galite rašyti asmeniškai. Lauksime.</p>
+    </div>    
     <h3>Kas yra PBS?</h3>
     <p class="intro">Paauglystė be streso (PBS) – tai AcceleratorX bendrovė, kuri siekia, kad paaugliai gyventų ramesnį gyvenimą, kadangi kiekvienais metais moksleiviai/studentai, mokymo įstaigose patiria stresą. Mes sugalvojome kaip galime tai palengvinti ir padėti vieni kitiems. Mūsų sukurtame tinklapyje galima bendrauti tarpusavyje, užduoti klausimą ir gauti atsakymą. Čia galite rasti įvairios informacijos kaip išmokti valdyti stresą. Konsultacijos su specialistais - psichologais (Vainilavičienė Audronė), socialiniais pedagogais (Aksinija Andijankina), buvusiais mokiniais (Emilija Zelenkauskaitė, VU studentė. Patarimai padės atsigauti nuo emociškai slegiančių problemų. Nelikime vieni kitiems abejingi!</p>
     <p class="bigger-font">Konsultantai</p>
     <div class="partners">
-        <p>
+        <p class="centered">
             <img src="images/daiva.png" alt="Daiva">
             <img src="images/audrone.png" alt="Audronė">
             <img src="images/aksinija.png" alt="Aksinija">
+            <img src="images/vytaute.png" alt="Vytaute">
+            <img src="images/kristina.png" alt="Kristina">
             <img src="images/emilija.png" alt="Emilija">
         </p>
     </div>
@@ -80,8 +110,8 @@
     
 <div class="footer-wrapper">
   <div  id="footer">
-        <a href="https://www.facebook.com/paauglystebestreso/" class="fa fa-facebook" target="_blank";></a>
-        <a href="https://www.instagram.com/paauglystebestreso/" class="fa fa-instagram" target="_blank";></a>
+        <a href="https://www.facebook.com/paauglystebestreso/" class="fa fa-facebook fa-lg" target="_blank";></a>
+        <a href="https://www.instagram.com/paauglystebestreso/" class="fa fa-instagram fa-xs" target="_blank";></a>
   </div>
 </div>
 
